@@ -16,7 +16,12 @@
  */
 // write your code here
 
+var daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
+
+for (index, day) in daysOfTheWeek.enumerate(){
+    print(day)
+}
 
 
 
@@ -27,7 +32,11 @@
  */
 // write your code here
 
+let numDaysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
+for (index, day) in numDaysOfTheWeek.enumerate(){
+print("\(index + 1 ) \(day)")
+}
 
 
 
@@ -38,7 +47,10 @@
  */
 // write your code here
 
-
+var emptyArray:[String]  = []
+if emptyArray.isEmpty{
+    print("Empty Array is empty.")
+}
 
 
 
@@ -51,6 +63,11 @@
 // write your code here
 
 
+var reverseEmptyArray:[String] = []
+if emptyArray.isEmpty{
+    print("Empty Array is empty.")
+}else{
+    print("Empty Array is not empty.")}
 
 
 
@@ -62,7 +79,8 @@
  ### 5. Find out the size of the 'daysOfTheWeek' array created earlier, and print it to the screen.
  */
 // write your code here
-
+var counter = numDaysOfTheWeek.count
+print(counter)
 
 
 
@@ -74,11 +92,12 @@
  ### 6. Add the two days of the weekend to the 'daysOfTheWeek array and create an enumerated loop to print the values.
  */
 // write your code here
+daysOfTheWeek.append("Saturday")
+daysOfTheWeek.append("Sunday")
 
-
-
-
-
+for (index, day) in daysOfTheWeek.enumerate(){
+    print("\(day)")
+}
 
 
 /*: question7
@@ -86,18 +105,17 @@
  */
 // write your code here
 
-
-
-
-
-
+daysOfTheWeek.removeLast()
+daysOfTheWeek.append("Sunday")
 
 
 /*: question8
  ### 8. Loop through the 'daysofTheWeek' array and change each value to lower case.
  */
 // write your code here
-
+for day in daysOfTheWeek{
+    day.lowercaseString
+}
 
 
 
@@ -109,10 +127,11 @@
  ### 9. Check to see if the size of the array is greater than 5, i.e. contains the days of the weekend. If so, remove the days of the weekend from the array.
  */
 // write your code here
-
-
-
-
+for days in daysOfTheWeek.enumerate(){
+if daysOfTheWeek.count > 5{
+    daysOfTheWeek.removeLast()
+    print(daysOfTheWeek)
+    }}
 
 
 //: Check here on the solution branch for a link to the solutions
